@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Setup - Theme Selector</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="stylepage.css">
+</head>
+
+<body>
+
+    <!-- Theme radio buttons -->
+    <!-- They are hidden visually but still usable by CSS :checked -->
+
+    <input type="radio" name="theme" id="light" checked>
+    <input type="radio" name="theme" id="dark">
+    <input type="radio" name="theme" id="contrast">
+
+
+    <!-- Main page -->
+    <div class="page">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Page Setup</h1>
+            <span class="close">×</span>
+        </header>
+
+
+        <!-- Main content -->
+        <main class="content">
+
+            <!-- Orientation section -->
+            <section class="section">
+
+                <h2>Orientation</h2>
+
+                <div class="radio-group">
+
+                    <label>
+                        <input type="radio" name="orientation" checked>
+                        <span>Portrait</span>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="orientation">
+                        <span>Landscape</span>
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- Margins -->
+            <section class="section">
+
+                <h2>Margins (centimeters)</h2>
+
+                <div class="margin-grid">
+
+                    <label for="top">Top</label>
+                    <input type="number" id="top" value="2.54" step="0.01">
+
+                    <label for="bottom">Bottom</label>
+                    <input type="number" id="bottom" value="2.54" step="0.01">
+
+                    <label for="left">Left</label>
+                    <input type="number" id="left" value="2.54" step="0.01">
+
+                    <label for="right">Right</label>
+                    <input type="number" id="right" value="2.54" step="0.01">
+
+                </div>
+
+            </section>
+
+
+            <!-- Paper size -->
+            <section class="section">
+
+                <h2>Paper Size</h2>
+
+                <select>
+                    <option>Letter (21.59 cm × 27.94 cm)</option>
+                    <option>A4 (21 cm × 29.7 cm)</option>
+                    <option>A5 (14.8 cm × 21 cm)</option>
+                </select>
+
+            </section>
+
+
+            <!-- Page color -->
+            <section class="section">
+
+                <h2>Page Color</h2>
+
+                <select>
+                    <option>White</option>
+                    <option>Light Gray</option>
+                    <option>Custom</option>
+                </select>
+
+            </section>
+
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button class="primary-btn">OK</button>
+
+                <button class="secondary-btn">Cancel</button>
+
+                <button class="secondary-btn">Set as default</button>
+
+            </div>
+
+        </main>
+
+
+        <!-- Theme selector -->
+        <footer class="theme-section">
+
+            <h2>Select Theme</h2>
+
+            <div class="theme-buttons">
+
+                <label for="light" class="theme-btn">
+                    Light
+                </label>
+
+                <label for="dark" class="theme-btn">
+                    Dark
+                </label>
+
+                <label for="contrast" class="theme-btn">
+                    High Contrast
+                </label>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>

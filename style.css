@@ -1,0 +1,12 @@
+
+.sectiondiv_line
+{
+    height: 5px;
+    background-color:  rgb(53, 79, 113);
+}
+.place_duration
+{
+    display: flex;
+    justify-content: space-between;
+    color:#00E9EE;
+}
