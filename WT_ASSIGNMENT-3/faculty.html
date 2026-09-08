@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Faculty Information Profile</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="stylefaculty.css">
+</head>
+
+<body>
+
+    <!-- =================================================
+         THEME RADIO BUTTONS
+         ================================================= -->
+
+    <input type="radio" name="theme" id="light" checked>
+    <input type="radio" name="theme" id="dark">
+    <input type="radio" name="theme" id="contrast">
+
+
+    <!-- =================================================
+         MAIN PAGE
+         ================================================= -->
+
+    <div class="page">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div>
+                <h1>Faculty Information Profile</h1>
+                <p>CST Department,IIEST Shibpur</p>
+            </div>
+
+        </header>
+
+
+        <!-- =================================================
+             THEME SELECTOR
+             ================================================= -->
+
+        <div class="theme-section">
+
+            <span class="theme-title">Theme:</span>
+
+            <label for="light">Light</label>
+
+            <label for="dark">Dark</label>
+
+            <label for="contrast">High Contrast</label>
+
+        </div>
+
+
+        <!-- =================================================
+             SEARCH SECTION
+             ================================================= -->
+
+        <section class="search-section">
+
+            <h2>Search Faculty</h2>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Enter faculty name..."
+                    autocomplete="off"
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+            <p class="search-hint">
+                Enter the name of a faculty member to view the profile.
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             PROFILE SECTION
+             ================================================= -->
+
+        <main id="profileContainer">
+
+            <!-- JavaScript will insert profile here -->
+
+        </main>
+
+
+        <!-- =================================================
+             FOOTER
+             ================================================= -->
+
+        <footer class="footer">
+
+            <p>
+                Assignment-3: JavaScript
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

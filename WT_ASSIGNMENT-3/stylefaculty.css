@@ -1,0 +1,738 @@
+/* =========================================================
+   CSS VARIABLES - LIGHT THEME
+   ========================================================= */
+
+:root {
+
+    --background: #f3f5f7;
+
+    --window-background: #ffffff;
+
+    --card-background: #ffffff;
+
+    --text: #222222;
+
+    --secondary-text: #666666;
+
+    --border: #cccccc;
+
+    --input-background: #ffffff;
+
+    --accent: #2878e8;
+
+    --accent-hover: #145fc7;
+
+    --button-text: #ffffff;
+
+    --secondary-button: #eeeeee;
+
+    --shadow: rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   BASIC RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    background-color: var(--background);
+
+    color: var(--text);
+
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease;
+
+    padding: 30px;
+}
+
+
+/* =========================================================
+   HIDE THEME RADIO BUTTONS
+   ========================================================= */
+
+#light,
+#dark,
+#contrast {
+    display: none;
+}
+
+
+/* =========================================================
+   MAIN PAGE
+   ========================================================= */
+
+.page {
+
+    width: 900px;
+
+    max-width: 100%;
+
+    margin: auto;
+
+    background-color: var(--window-background);
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px var(--shadow);
+
+    overflow: hidden;
+
+    transition:
+        background-color 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.header {
+
+    padding: 25px;
+
+    text-align: center;
+
+    border-bottom: 1px solid var(--border);
+
+    transition:
+        background-color 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+.header h1 {
+
+    font-size: 28px;
+    color:var(--text);
+
+    margin-bottom: 8px;
+}
+
+
+.header p {
+
+    font-size: 15px;
+
+    color: var(--secondary-text);
+
+    transition: color 0.4s ease;
+}
+
+
+/* =========================================================
+   THEME SECTION
+   ========================================================= */
+
+.theme-section {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 15px 25px;
+
+    border-bottom: 1px solid var(--border);
+
+    background-color: var(--background);
+
+    transition:
+        background-color 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+.theme-title {
+
+    font-weight: bold;
+    color :var(--text);
+
+    margin-right: 5px;
+}
+
+
+.theme-section label {
+
+    padding: 7px 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+
+    background-color: var(--window-background);
+
+    color: var(--text);
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.theme-section label:hover {
+
+    background-color: var(--accent);
+
+    color: var(--button-text);
+
+    border-color: var(--accent);
+}
+
+
+/* =========================================================
+   SEARCH SECTION
+   ========================================================= */
+
+.search-section {
+
+    padding: 25px;
+
+    border-bottom: 1px solid var(--border);
+
+    transition: border-color 0.4s ease;
+}
+
+
+.search-section h2 {
+
+    font-size: 20px;
+    color :var(--text);
+
+    margin-bottom: 15px;
+}
+
+
+.search-box {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.search-box input {
+
+    flex: 1;
+
+    padding: 12px 15px;
+
+    font-size: 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    background-color: var(--input-background);
+
+    color: var(--text);
+
+    outline: none;
+
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+.search-box input:focus {
+
+    border-color: var(--accent);
+
+    box-shadow: 0 0 0 2px rgba(40, 120, 232, 0.15);
+}
+
+
+.search-box button {
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: var(--accent);
+
+    color: var(--button-text);
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease;
+}
+
+
+.search-box button:hover {
+
+    background-color: var(--accent-hover);
+}
+
+
+.search-hint {
+
+    margin-top: 10px;
+
+    font-size: 13px;
+
+    color: var(--secondary-text);
+
+    transition: color 0.4s ease;
+}
+
+
+/* =========================================================
+   PROFILE CONTAINER
+   ========================================================= */
+
+#profileContainer {
+
+    padding: 30px;
+}
+
+
+/* =========================================================
+   FACULTY PROFILE
+   ========================================================= */
+
+.profile {
+
+    display: flex;
+
+    gap: 30px;
+
+    padding: 25px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    background-color: var(--card-background);
+
+    box-shadow: 0 4px 12px var(--shadow);
+
+    transition:
+        background-color 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/* =========================================================
+   FACULTY PHOTO
+   ========================================================= */
+
+.photo-section {
+
+    width: 200px;
+
+    min-width: 200px;
+
+    text-align: center;
+}
+
+
+.photo-section img {
+
+    width: 180px;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+
+    border: 2px solid var(--border);
+
+    transition:
+        border-color 0.4s ease;
+}
+
+
+/* =========================================================
+   FACULTY DETAILS
+   ========================================================= */
+
+.details {
+
+    flex: 1;
+}
+
+
+.details h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+    color: var(--accent);
+
+    transition: color 0.4s ease;
+}
+
+
+/* =========================================================
+   INFORMATION ROW
+   ========================================================= */
+
+.info-row {
+
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 10px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid var(--border);
+
+    transition: border-color 0.4s ease;
+}
+
+
+.info-label {
+
+    font-weight: bold;
+    color:var(--text);
+}
+
+
+.info-value {
+
+    color: var(--secondary-text);
+
+    transition: color 0.4s ease;
+}
+
+
+/* =========================================================
+   LISTS
+   ========================================================= */
+
+.info-value ul {
+
+    padding-left: 20px;
+}
+
+
+.info-value li {
+
+    margin-bottom: 5px;
+}
+
+
+/* =========================================================
+   EMAIL
+   ========================================================= */
+
+.email {
+
+    color: var(--accent);
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+
+.email:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   NO RESULT MESSAGE
+   ========================================================= */
+
+.no-result {
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    border: 1px dashed var(--border);
+
+    border-radius: 8px;
+
+    color: var(--secondary-text);
+
+    transition:
+        color 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+.no-result h2 {
+
+    margin-bottom: 10px;
+
+    color: var(--text);
+
+    transition: color 0.4s ease;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-top: 1px solid var(--border);
+
+    color: var(--secondary-text);
+
+    font-size: 13px;
+
+    transition:
+        color 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* =========================================================
+   DARK THEME
+   :checked + ~ sibling combinator
+   ========================================================= */
+
+#dark:checked ~ .page {
+
+    --background: #181818;
+
+    --window-background: #252525;
+
+    --card-background: #2d2d2d;
+
+    --text: #eeeeee;
+
+    --secondary-text: #ddd;
+
+    --border: #4a4a4a;
+
+    --input-background: #333333;
+
+    --accent: #4d9aff;
+
+    --accent-hover: #2678dd;
+
+    --button-text: #ffffff;
+
+    --secondary-button: #383838;
+
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================================
+   HIGH CONTRAST THEME
+   ========================================================= */
+
+#contrast:checked ~ .page {
+
+    --background: #000000;
+
+    --window-background: #000000;
+
+    --card-background: #000000;
+
+    --text: #ffffff;
+
+    --secondary-text: #ffffff;
+
+    --border: #ffffff;
+
+    --input-background: #000000;
+
+    --accent: #ffff00;
+
+    --accent-hover: #ffffff;
+
+    --button-text: #000000;
+
+    --secondary-button: #000000;
+
+    --shadow: rgba(255, 255, 255, 0.3);
+}
+
+
+/* =========================================================
+   HIGH CONTRAST BUTTON
+   ========================================================= */
+
+#contrast:checked ~ .page .search-box button {
+
+    background-color: #ffff00;
+
+    color: #000000;
+
+    border: 2px solid #ffffff;
+}
+
+
+#contrast:checked ~ .page .details h2 {
+
+    color: #ffff00;
+}
+
+
+#contrast:checked ~ .page .theme-section label:hover {
+
+    background-color: #ffff00;
+
+    color: #000000;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    body {
+
+        padding: 10px;
+    }
+
+
+    .header h1 {
+
+        font-size: 23px;
+    }
+
+
+    .theme-section {
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .profile {
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: left;
+    }
+
+
+    .photo-section {
+
+        width: 100%;
+    }
+
+
+    .details {
+
+        width: 100%;
+    }
+
+
+    .info-row {
+
+        grid-template-columns: 1fr;
+
+        gap: 5px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .search-box {
+
+        flex-direction: column;
+    }
+
+
+    .search-box button {
+
+        width: 100%;
+    }
+
+
+    #profileContainer {
+
+        padding: 15px;
+    }
+
+
+    .profile {
+
+        padding: 15px;
+    }
+
+
+    .photo-section img {
+
+        width: 150px;
+
+        height: 190px;
+    }
+
+
+    .details h2 {
+
+        font-size: 21px;
+    }
+
+
+    .theme-section {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .theme-title {
+
+        text-align: center;
+    }
+
+
+    .theme-section label {
+
+        text-align: center;
+    }
+}
