@@ -17,4 +17,4 @@ jobs:
           node-version: 24
 
       - name: Run Bank Account Project
-        run: node WT-ASSIGNMENT-3/Bank-Account-Project/BankAccount.js --demo
+        run: node WT_ASSIGNMENT-3/Bank-Account-Project/BankAccount.js --demo
