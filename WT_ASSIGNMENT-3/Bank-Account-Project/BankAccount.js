@@ -108,4 +108,28 @@ function showMenu() {
 
 
 // Start program
-showMenu();
+if (process.argv.includes("--demo")) {
+
+    console.log("===== BANK ACCOUNT SYSTEM - DEMO =====");
+
+    const demoAccount = new BankAccount("10245", "Rahul", 10000);
+
+    console.log("\nInitial Balance:");
+    demoAccount.checkBalance();
+
+    console.log("\nDepositing Rs. 5000...");
+    demoAccount.deposit(5000);
+
+    console.log("\nWithdrawing Rs. 2500...");
+    demoAccount.withdraw(2500);
+
+    console.log("\nFinal Balance:");
+    demoAccount.checkBalance();
+
+    console.log("\nAccount Details:");
+    demoAccount.displayDetails();
+
+} else {
+
+    showMenu();
+}

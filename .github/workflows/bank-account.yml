@@ -1,0 +1,20 @@
+name: Bank Account JavaScript
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-bank-account:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run Bank Account Project
+        run: node WT-ASSIGNMENT-3/Bank-Account-Project/BankAccount.js --demo
